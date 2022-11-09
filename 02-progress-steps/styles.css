@@ -1,0 +1,21 @@
+/* Este es el estilo del main */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    height:100vh;
+    width:100vw; 
+    display:flex;
+    justify-content: center;
+    align-items:center;   
+    margin: 0;
+}
+.container-main{
+    background-color: blue;
+    height: 100px;
+    width:400px;
+    display:flex;
+    flex-direction:column; 
+}
