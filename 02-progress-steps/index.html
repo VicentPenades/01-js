@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cartas expandibles</title>
+    <title>Progess steps</title>
     <link rel="stylesheet" href="./styles.css"/>
     
 
@@ -12,16 +12,16 @@
 <body>
 
     <div class="container-main">
-        <div class="container-progress">
-            <div class="number">1</div>             
-            <div class="number">2</div>
-            <div class="number">3</div>
-            <div class="number">4</div>  
+        <div class="subcontainer container-progress">
+            <div class="number-item number-active">1</div>             
+            <div class="number-item">2</div>
+            <div class="number-item">3</div>
+            <div class="number-item">4</div>  
             <div class="progress"></div>         
         </div>
-        <div class="container-button">
-        <button class="container-button-item">Prev</button>
-        <button class="container-button-item">Next</button>
+        <div class="subcontainer container-button">
+        <button class="button-item" id="prev">Prev</button>
+        <button class="button-item button-active" id="next">Next</button>
         </div>
     </div>
 

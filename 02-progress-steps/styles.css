@@ -1,8 +1,12 @@
-/* Este es el estilo del main */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+:root{
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+}
 *{
     box-sizing: border-box;
 }
-
 body{
     overflow: hidden;
     height:100vh;
@@ -13,9 +17,65 @@ body{
     margin: 0;
 }
 .container-main{
-    background-color: blue;
     height: 100px;
     width:400px;
     display:flex;
     flex-direction:column; 
+}
+
+.subcontainer{
+    height: 50%;
+    display:flex;
+    flex-direction:row; 
+    align-items: center;
+}
+.container-progress{ 
+    justify-content: space-between;
+    position:relative;
+}
+.container-button{
+    justify-content: center;
+    gap:20px;
+}
+
+.progress{
+    background-color:var(--line-border-fill);
+    width:0%;
+    position:absolute;
+    top:50%;
+    left:0;
+    height:4px;
+    transition: 0.4s ease;
+    z-index:-1;
+}
+
+.number-item{
+    border:3px solid var(--line-border-empty);
+    color:#999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+.number-active{
+    border:3px solid var(--line-border-fill);
+}
+
+.button-item{
+    background-color:var(--line-border-empty);
+    color:white;
+    border:0px;
+    border-radius:6px;
+    padding:8px 30px;
+    margin:5px;
+    font-size:14px;
+    cursor:not-allowed;
+    
+}
+.button-active{
+    background-color:var(--line-border-fill);
+    cursor:pointer;
 }
