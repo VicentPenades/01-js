@@ -1,0 +1,20 @@
+/* Este es el estilo del main */
+*{
+    box-sizing:border-box;
+}
+body{
+    overflow: hidden;
+    height:100vh;
+    width:100vw; 
+    display:flex;
+    justify-content: center;
+    align-items:center;   
+    margin: 0;
+}
+.container-main{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1576161787924-01bb08dad4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80') no-repeat center ;
+}
+

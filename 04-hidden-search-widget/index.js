@@ -1,6 +1,7 @@
-const button = document.querySelector(".button1");
-const input1 = document.querySelector(".input");
+const button1 = document.querySelector(".button1");
+const container = document.querySelector(".container-main");
 
-button1.addEventListener("click", (input) => {
-  input1.classList.add("input-closed");
+button1.addEventListener("click", () => {
+  container.classList.toggle("active");
+  input1.focus();
 });

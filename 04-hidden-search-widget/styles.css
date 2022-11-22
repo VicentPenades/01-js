@@ -1,31 +1,53 @@
 /* Este es el estilo del main */
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 body {
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   background-color: purple;
 }
-
-.container-main {
-  gap: 0px;
+.container-main{
+  position: relative;
+  height: 50px;
 }
 
-.input1,
-.button1 {
+.input1{
+  width:50px;
+  height: 50px;
+  padding:15px;
   font-size: 20px;
-  padding: 10px 10px;
-  margin: 0;
   background-color: white;
-  border: 1px black;
+  border:0;
+  transition: width 0.3s ease;
 }
 
-.input-closed {
-  display: none;
+.container-main.active .input1{
+  width:200px;
 }
+
+.button1 {
+  width:50px;
+  height: 50px;
+position:absolute;
+top:0;
+left:0;
+cursor:pointer;
+  font-size: 20px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.container-main.active .button1{
+  transform: translateX(198px);
+}
+
+.button1:focus,
+.input1:focus {
+  outline: none;
+}
+
